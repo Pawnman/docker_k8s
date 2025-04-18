@@ -36,7 +36,7 @@
 
 <p>kubectl exec -it -- mysql -u root -p, например: если имя mysql-0: kubectl exec -it mysql-0 -- mysql -u root -p Вссести пароль, который был зашифрован base64 (для удобства указан примечанием в secret.yaml) и выполнить команду MySQL: SHOW DATABASES;</p>
 
-    <li>8. Открыть фронтенд приложения:</li>
+<li>8. Открыть фронтенд приложения:</li>
 
 <p>Перейти на страницу http://localhost:30002/ если не находит файл можно воспользоваться либо форвардингом порта: kubectl port-forward svc/frontend 8080:80 и перейти: http://localhost:8080/ или временно использовать прокси: kubectl proxy --port=8080 и перейти: http://localhost:8080/api/v1/namespaces/default/services/frontend/proxy/</p>
 
