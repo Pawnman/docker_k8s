@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Page PMU 209</title>
+    </head>
+    <body>
+        <h1>You are welcome!</h1>
+        <p>This is my (PMU 209) page on Nginx in Kubernetes.</p>
+    </body>
+    </html>
