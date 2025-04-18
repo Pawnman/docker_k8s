@@ -20,10 +20,11 @@
     <li>4. Создать кластер k3d: k3d cluster create test-cluster --port '30001:30001'</li>
     <li>5. Сборать Docker-образ: docker build -t pmu-nginx:v1 .</li>
     <li>6. Импорт образа в k3d: k3d image import pmu-nginx:v1 --cluster test-cluster</li>
-    <li>7. Примененить манифесты Kubernetes:
-    <lo>kubectl apply -f configmap.yaml</lo>
-    <lo>kubectl apply -f deployment.yaml</lo>
-    <lo>kubectl apply -f service.yaml</lo>
-    </li>
+    <li>7. Примененить манифесты Kubernetes:</li>
+    <ul>
+        <li>kubectl apply -f configmap.yaml</li>
+        <li>kubectl apply -f deployment.yaml</li>
+        <li>kubectl apply -f service.yaml</li>
+    </ul>
     <li>8. Проверить работу: kubectl get pods</li>
     <li>9. Открыть веб-браузер и перейти по адресу: http://localhost:30001</li>
